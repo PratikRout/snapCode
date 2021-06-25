@@ -1,0 +1,9 @@
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def solve(self, A):
+        b=bin(A)
+        c=list(b)
+        d=c[2:][::-1]
+        i=d.index("1")
+        return len(d[:i])
