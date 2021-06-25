@@ -1,0 +1,10 @@
+class Solution:
+    # @param A : string
+    # @return an integer
+    def solve(self, A):
+        pal=0
+        for i in range(len(A)):
+            B=A[:i]+A[i+1:]
+            if B==B[::-1]:
+                pal=1
+        return pal
